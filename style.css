@@ -1,0 +1,157 @@
+.card-body{
+    padding: .5rem;
+}
+.card-text {
+    height: 90px; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    display: -webkit-box;
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical;
+  }
+  .card-author , .card-date{
+font-size: .7rem;  
+}
+  .card-title{
+    height: 50px; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    display: -webkit-box;
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical;
+  }
+.btn{
+    display: block;
+    width: fit-content;
+    border-radius: 2rem;
+}
+.gif{
+    height: 22rem;
+    width: 22rem;
+    display: block;
+    margin: auto;
+}
+*{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.navbar {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar-header {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    margin: 0;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.toggle-button {
+    display: none;
+    font-size: 24px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-right: 20px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+/* Hide nav links by default on smaller screens */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        z-index: 1000;
+    }
+
+    .nav-links.active li {
+        margin: 10px;
+    }
+    .toggle-button {
+        display: block;
+    }
+    .text-light.active {
+        padding-top: 150px;
+    }
+    .card-img-top{
+        height: 100px;
+    }
+    .card-title{
+    font-size: .8rem;
+    }
+    .card-text {
+        height: 70px;
+        font-size: .7rem;
+    }
+    .card-author, .card-date {
+        font-size: .5rem;
+    }
+    .btn {
+        font-size: .5rem;
+        padding: 0.2rem 0.5rem;
+    }
+}
+
+#headline{
+    margin: 2rem 0;
+}
+.row{
+    padding: 0 2rem;
+}
+#paginationButtons{
+    display: flex;
+    justify-content: space-around;
+    width: fit-content;
+    margin-bottom: 7rem;
+}
+#prevBtn {
+    width: fit-content;
+    position: absolute;
+    left: 0;
+    padding: .5rem 1rem;
+    margin: 2rem 0 2rem 3rem;
+    border-radius: 2rem;
+}
+#nextBtn {
+    width: fit-content;
+    position: absolute;
+    right: 0;
+    padding: .5rem 2rem;
+    margin: 2rem 3rem 2rem 0;
+    border-radius: 2rem;
+}
+
+
+/* ---------------------------------------------------------------- */
